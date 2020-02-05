@@ -37,6 +37,10 @@
         <servlet-name>UpdateImageToPdfServlet</servlet-name>
         <servlet-class>epsi.fr.B3C3.CPD.servlet.UpdateImageToPdfServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CreatePdf</servlet-name>
+        <servlet-class>epsi.fr.B3C3.CPD.servlet.CreatePdf</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
@@ -68,6 +72,10 @@
     <servlet-mapping>
         <servlet-name>UpdateImageToPdfServlet</servlet-name>
         <url-pattern>/UpdateImageToPdfServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreatePdf</servlet-name>
+        <url-pattern>/CreatePdf</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
