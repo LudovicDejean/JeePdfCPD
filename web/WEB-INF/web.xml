@@ -9,9 +9,65 @@
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>DeletePagesPdf</servlet-name>
+        <servlet-class>epsi.fr.B3C3.CPD.servlet.DeletePagesPdf</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExtractImageToPdf</servlet-name>
+        <servlet-class>epsi.fr.B3C3.CPD.servlet.ExtractImageToPdf</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExtractPagePdf</servlet-name>
+        <servlet-class>epsi.fr.B3C3.CPD.servlet.ExtractPagePdf</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FusionPdf</servlet-name>
+        <servlet-class>epsi.fr.B3C3.CPD.servlet.FusionPdf</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignPdf</servlet-name>
+        <servlet-class>epsi.fr.B3C3.CPD.servlet.SignPdf</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SortOrderPdf</servlet-name>
+        <servlet-class>epsi.fr.B3C3.CPD.servlet.SortOrderPdf</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateImageToPdfServlet</servlet-name>
+        <servlet-class>epsi.fr.B3C3.CPD.servlet.UpdateImageToPdfServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeletePagesPdf</servlet-name>
+        <url-pattern>/DeletePagesPdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExtractImageToPdf</servlet-name>
+        <url-pattern>/ExtractImageToPdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExtractPagePdf</servlet-name>
+        <url-pattern>/ExtractPagePdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FusionPdf</servlet-name>
+        <url-pattern>/FusionPdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignPdf</servlet-name>
+        <url-pattern>/SignPdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SortOrderPdf</servlet-name>
+        <url-pattern>/SortOrderPdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateImageToPdfServlet</servlet-name>
+        <url-pattern>/UpdateImageToPdfServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
