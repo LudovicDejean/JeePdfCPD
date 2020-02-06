@@ -7,11 +7,11 @@ package epsi.fr.B3C3.CPD.bean;
 
 import com.itextpdf.kernel.pdf.*;
 import com.itextpdf.layout.element.Paragraph;
-import epsi.fr.B3C3.CPD.servlet.CreatePdf;
 import java.io.File;
 import java.io.FileOutputStream;
 import javax.inject.Named;
 import javax.enterprise.context.Dependent;
+import epsi.fr.B3C3.CPD.servlet.*;
 
 /**
  *
@@ -25,11 +25,6 @@ public class BeanManaged {
      * Creates a new instance of BeanManaged
      */
     public BeanManaged() {
-
+        CreatePdf CreatePdf;
     }
-
-    public void generatePDF() throws Exception {
-        
-    }
-
 }
