@@ -5,13 +5,18 @@
  */
 package epsi.fr.B3C3.CPD.bean;
 
+import com.itextpdf.io.image.ImageData;
+import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.pdf.*;
+import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import java.io.File;
 import java.io.FileOutputStream;
 import javax.inject.Named;
 import javax.enterprise.context.Dependent;
 import epsi.fr.B3C3.CPD.servlet.*;
+import java.io.IOException;
 
 /**
  *
@@ -27,4 +32,6 @@ public class BeanManaged {
     public BeanManaged() {
         CreatePdf CreatePdf;
     }
+    
+  
 }

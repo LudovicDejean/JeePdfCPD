@@ -34,10 +34,6 @@
         <servlet-class>epsi.fr.B3C3.CPD.servlet.SortOrderPdf</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>UpdateImageToPdfServlet</servlet-name>
-        <servlet-class>epsi.fr.B3C3.CPD.servlet.UpdateImageToPdfServlet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>CreatePdf</servlet-name>
         <servlet-class>epsi.fr.B3C3.CPD.servlet.CreatePdf</servlet-class>
     </servlet>
@@ -68,10 +64,6 @@
     <servlet-mapping>
         <servlet-name>SortOrderPdf</servlet-name>
         <url-pattern>/SortOrderPdf</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>UpdateImageToPdfServlet</servlet-name>
-        <url-pattern>/UpdateImageToPdfServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CreatePdf</servlet-name>

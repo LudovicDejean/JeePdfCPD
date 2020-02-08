@@ -5,25 +5,20 @@
  */
 package epsi.fr.B3C3.CPD.servlet;
 
-import com.itextpdf.io.image.ImageData;
-import com.itextpdf.io.image.ImageDataFactory;
-import com.itextpdf.kernel.pdf.PdfDocument;
-import com.itextpdf.kernel.pdf.PdfWriter;
-import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.Image;
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author dejea
+ * @author Legion
  */
-public class UpdateImageToPdfServlet extends HttpServlet {
+@WebServlet(name = "UpdateImagePdf", urlPatterns = {"/UpdateImagePdf"})
+public class UpdateImagePdf extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -42,12 +37,23 @@ public class UpdateImageToPdfServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet UpdateImageToPdfServlet</title>");
+            out.println("<title>Servlet UpdateImagePdf</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet UpdateImageToPdfServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet UpdateImagePdf at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
+            //            File file = new File("iText_Image_Example.pdf");
+//
+//            PdfWriter pdfWriter = new PdfWriter(file);
+//            PdfDocument pdfDocument = new PdfDocument(pdfWriter);
+//
+//            Document document = new Document(pdfDocument);
+//            ImageData imageData = ImageDataFactory.create("logo.png");
+//            Image pdfImg = new Image(imageData);
+//
+//            document.add(pdfImg);
+//            document.close();
         }
     }
 
@@ -89,20 +95,5 @@ public class UpdateImageToPdfServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
-    private UpdateImageToPdfServlet ()throws IOException {
-
-        File file = new File("iText_Image_Example.pdf");
-
-        PdfWriter pdfWriter = new PdfWriter(file);
-        PdfDocument pdfDocument = new PdfDocument(pdfWriter);
-
-        Document document = new Document(pdfDocument);
-        ImageData imageData = ImageDataFactory.create("logo.png");
-        Image pdfImg = new Image(imageData);
-
-        document.add(pdfImg);
-        document.close();
-    }
 
 }
