@@ -5,33 +5,47 @@
  */
 package epsi.fr.B3C3.CPD.bean;
 
-import com.itextpdf.io.image.ImageData;
-import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.pdf.*;
-import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import java.io.File;
 import java.io.FileOutputStream;
 import javax.inject.Named;
 import javax.enterprise.context.Dependent;
 import epsi.fr.B3C3.CPD.servlet.*;
-import java.io.IOException;
+import java.io.Serializable;
+import javax.annotation.PostConstruct;
+import javax.enterprise.context.SessionScoped;
 
 /**
  *
  * @author dejea
  */
 @Named(value = "beanManaged")
-@Dependent
-public class BeanManaged {
+@SessionScoped
+public class BeanManaged implements Serializable{
 
+    private String trierImage;
+
+    public String getTrierImage() {
+        return trierImage;
+    }
+
+    public void setTrierImage(String trierImage) {
+        this.trierImage = trierImage;
+    }
+    
+    @PostConstruct
+    public void init() {
+       trierImage = "trier.png";
+    }
     /**
      * Creates a new instance of BeanManaged
      */
     public BeanManaged() {
-        CreatePdf CreatePdf;
+//        CreatePdf CreatePdf;
     }
+           
     
-  
+    
+    
 }
