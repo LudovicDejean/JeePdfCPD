@@ -57,6 +57,8 @@ public class AleaBean implements Serializable {
     public void setSignerImage(String signerImage) {
         this.signerImage = signerImage;
     }
+    
+    
 
 
 }
