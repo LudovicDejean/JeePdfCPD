@@ -5,8 +5,6 @@
  */
 package epsi.fr.B3C3.CPD.bean;
 
-import com.itextpdf.kernel.pdf.*;
-import com.itextpdf.layout.element.Paragraph;
 import java.io.File;
 import java.io.FileOutputStream;
 import javax.inject.Named;
