@@ -66,4 +66,8 @@ public class AleaBean implements Serializable {
         
         pdf.writeUsingIText();
     }
+    public void readPDf(){
+        ImageToPDF pdf = new ImageToPDF();
+        pdf.ReadPdf();
+    }
 }

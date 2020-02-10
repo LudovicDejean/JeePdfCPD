@@ -6,7 +6,9 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.pdf.parser.PdfTextExtractor;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -30,7 +32,7 @@ public class ImageToPDF {
     public void writeUsingIText() {
 
         Document document = new Document();
-
+        
         try {
 
             PdfWriter.getInstance(document, new FileOutputStream(new File(FILE_NAME)));
@@ -62,6 +64,24 @@ public class ImageToPDF {
 
         } catch (FileNotFoundException | DocumentException e) {
             e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void ReadPdf(){
+        PdfReader reader;
+        try {
+            
+            reader = new PdfReader("C:\\temp\\itext.pdf");
+
+            // pageNumber = 1
+            String textFromPage = PdfTextExtractor.getTextFromPage(reader, 1);
+
+            System.out.println(textFromPage);
+
+            reader.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
