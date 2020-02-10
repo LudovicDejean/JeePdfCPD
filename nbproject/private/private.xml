@@ -5,9 +5,12 @@
         <group>
             <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/web/index.xhtml</file>
             <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/bean/BeanManaged.java</file>
+            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/servlet/FusionPdf.java</file>
             <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/servlet/CreatePdf.java</file>
+            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/bean/AleaBean.java</file>
             <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/CreatePDF.java</file>
+            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/servlet/VaChercherPDF.java</file>
+            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/ImageToPDF.java</file>
         </group>
     </open-files>
 </project-private>
