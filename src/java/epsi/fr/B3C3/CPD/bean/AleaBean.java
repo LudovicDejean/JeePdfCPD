@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import epsi.fr.B3C3.CPD.classe.ImageToPDF;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
@@ -60,5 +61,9 @@ public class AleaBean implements Serializable {
     
     
 
-
+    public void appelFonction(){
+        ImageToPDF pdf = new ImageToPDF();
+        
+        pdf.writeUsingIText();
+    }
 }
