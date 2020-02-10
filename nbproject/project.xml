@@ -11,6 +11,7 @@
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                     <file>${libs.jsf20.classpath}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
@@ -24,6 +25,9 @@
 =======
                     <file>${libs.IText_5.5.13.1.classpath}</file>
 >>>>>>> Stashed changes
+=======
+                    <file>${libs.IText_5.5.13.1.classpath}</file>
+>>>>>>> alec
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
