@@ -5,6 +5,7 @@
  */
 import epsi.fr.B3C3.CPD.classe.ImageToPDF;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,6 +17,8 @@ import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import org.primefaces.event.FileUploadEvent;
+import org.primefaces.model.DefaultStreamedContent;
+import org.primefaces.model.StreamedContent;
 import org.primefaces.model.UploadedFile;
 
 /**
@@ -29,15 +32,52 @@ public class AleaBean implements Serializable {
     private UploadedFile file;
     private String cheminImg = "";
     private String destination = "C:\\temp\\";
+    private String finalPath;
+    private String contentType;
     private String fusionImage;
     private String trierImage;
     private String signerImage;
+    private StreamedContent dFile;
+    
+    
+    public String getFinalPath() {
+        return finalPath;
+    }
 
+    public void setFinalPath(String finalPath) {
+        this.finalPath = finalPath;
+    }
+    
+    public UploadedFile getFile() {
+        return file;
+    }
 
+    public void setFile(UploadedFile file) {
+        this.file = file;
+    }
+
+    public String getCheminImg() {
+        return cheminImg;
+    }
+
+    public void setCheminImg(String cheminImg) {
+        this.cheminImg = cheminImg;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
+    public void setdFile(StreamedContent dFile) {
+        this.dFile = dFile;
+    }
     public AleaBean() {
 
     }
-
     @PostConstruct
     public void init() {
 
@@ -70,8 +110,14 @@ public class AleaBean implements Serializable {
         this.signerImage = signerImage;
     }
     
+    public void downloadAction(){
+        contentType = FacesContext.getCurrentInstance().getExternalContext().getMimeType(destination+ "a.pdf");
+    }
     
-
+    public StreamedContent getdFile() throws IOException{
+        return new DefaultStreamedContent(new FileInputStream(destination+"a.pdf"), contentType);        
+    }
+    
     public void appelFonction(){
         ImageToPDF pdf = new ImageToPDF();
         
@@ -100,7 +146,7 @@ public class AleaBean implements Serializable {
 
     public void copyFile(String fileName, InputStream in) {
         try {
-
+            this.setFinalPath(destination+fileName);
             OutputStream out = new FileOutputStream(new File(destination + fileName));
             int read = 0;
             byte[] bytes = new byte[1024];
@@ -117,6 +163,7 @@ public class AleaBean implements Serializable {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+        
     }
 
 }

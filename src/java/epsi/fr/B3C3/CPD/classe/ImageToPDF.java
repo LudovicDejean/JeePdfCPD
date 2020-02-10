@@ -64,8 +64,6 @@ public class ImageToPDF {
 
         } catch (FileNotFoundException | DocumentException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
     
