@@ -60,5 +60,9 @@ public class AleaBean implements Serializable {
     
     
 
-
+    public void appelFonction(){
+        ImageToPDF pdf = new ImageToPDF();
+        
+        pdf.writeUsingIText();
+    }
 }
