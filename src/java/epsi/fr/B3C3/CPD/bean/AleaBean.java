@@ -13,6 +13,8 @@ import java.io.OutputStream;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
@@ -32,7 +34,7 @@ public class AleaBean implements Serializable {
     private UploadedFile file;
     private String cheminImg = "";
     private String destination = "C:\\temp\\";
-    private String finalPath;
+    private String finalPath = "a";
     private String contentType;
     private String fusionImage;
     private String trierImage;
@@ -40,6 +42,10 @@ public class AleaBean implements Serializable {
     private StreamedContent dFile;
     
     
+//    public String getFinalPath() throws UnsupportedEncodingException {
+//        return URLEncoder.encode(finalPath, "UTF8");
+//    }
+
     public String getFinalPath() {
         return finalPath;
     }

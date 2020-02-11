@@ -36,7 +36,9 @@ public class DownloadPdf extends HttpServlet {
         response.setContentType("application/pdf");
         response.setHeader("Content-disposition", "attachment;filename=" + "testPDF.pdf");
         try {
-            File f = new File("C:\\Users\\codro\\Desktop\\TP1_Markov.pdf");
+            String filePath = request.getParameter("filePath");
+            File f = new File("C:\\temp\\"+filePath+".pdf");
+            System.out.println(filePath);
             FileInputStream fis = new FileInputStream(f);
             DataOutputStream os = new DataOutputStream(response.getOutputStream());
             response.setHeader("Content-Length", String.valueOf(f.length()));
