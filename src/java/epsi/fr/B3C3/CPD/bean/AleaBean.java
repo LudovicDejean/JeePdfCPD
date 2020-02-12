@@ -1,3 +1,5 @@
+package epsi.fr.B3C3.CPD.bean;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -124,15 +126,7 @@ public class AleaBean implements Serializable {
         return new DefaultStreamedContent(new FileInputStream(destination+"a.pdf"), contentType);        
     }
     
-    public void appelFonction(){
-        ImageToPDF pdf = new ImageToPDF();
-        
-        pdf.writeUsingIText();
-    }
-    public void readPDf(){
-        ImageToPDF pdf = new ImageToPDF();
-        pdf.ReadPdf();
-    }
+
     
     public void upload(FileUploadEvent event) {
 

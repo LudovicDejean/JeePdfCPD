@@ -2,19 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
-        <group/>
-=======
         <group>
-            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/web/index.xhtml</file>
-            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/bean/BeanManaged.java</file>
-            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/servlet/FusionPdf.java</file>
-            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/servlet/CreatePdf.java</file>
-            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/bean/AleaBean.java</file>
-            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/servlet/VaChercherPDF.java</file>
-            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/JeePdfCPD/src/java/ImageToPDF.java</file>
+            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/jee/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/servlet/ExtractPagePdf.java</file>
+            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/jee/JeePdfCPD/web/index.xhtml</file>
+            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/jee/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/servlet/DownloadPdf.java</file>
+            <file>file:/C:/Users/thoma/OneDrive/Documents/EPSI/TP/JEE/jee/JeePdfCPD/src/java/epsi/fr/B3C3/CPD/bean/AleaBean.java</file>
         </group>
->>>>>>> alec
     </open-files>
 </project-private>
