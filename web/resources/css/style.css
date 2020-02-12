@@ -7,3 +7,31 @@ and open the template in the editor.
     Created on : 8 févr. 2020, 19:19:58
     Author     : Legion
 */
+
+.maJform{
+    display: grid !important;
+}
+
+.uploadCenter{
+    margin: 5vw 10vw 20vw 30vw;
+}
+
+img{
+    margin: 1vw 5vw 1vw 45vw;
+}
+
+#creerPDF{
+
+}
+
+.titrePdf{
+    position: relative;
+    margin: 5vw 40vw 3vw 40vw;
+    z-index: 100000;
+}
+
+#formPDF{
+    margin-top: 0vw;
+    padding-top: 10vw;
+    position: relative;
+}
